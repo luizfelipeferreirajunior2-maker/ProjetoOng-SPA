@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a ONG Mãos que Transformam e nossas ações sociais.">
+    <title>Mãos que Transformam</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="data:,">
+
+    <!-- Biblioteca externa: Day.js para tratamento e formatação de datas -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js" async></script>
+
+    <!-- Entry point: os demais arquivos são carregados via import/export ES6 -->
+    <script type="module" src="../js/app.js"></script>
+</head>
+<body>
+<header class="site-header">
+<div class="container header-content">
+<a aria-label="Mãos que Transformam - página inicial" class="logo" href="#/inicio" data-route="/inicio">
+<span aria-hidden="true" class="logo-mark">❤</span>
+<span>Mãos que Transformam</span>
+</a>
+<div class="header-actions">
+<button aria-pressed="false" aria-label="Ativar modo de alto contraste" class="contrast-toggle" type="button">
+<span aria-hidden="true" class="contrast-icon">◐</span>
+<span class="contrast-toggle-text">Alto contraste</span>
+</button>
+<button aria-controls="navegacao-principal" aria-expanded="false" aria-label="Abrir menu de navegação" class="menu-toggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+<nav aria-label="Navegação principal" class="main-nav" id="navegacao-principal">
+<ul class="menu">
+<li>
+<a aria-current="page" class="active" href="#/inicio" data-route="/inicio">Início</a>
+</li>
+<li class="menu-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" type="button">
+                            Projetos
+                            <span aria-hidden="true" class="dropdown-arrow">▾</span>
+</button>
+<ul class="submenu">
+<li><a href="#/projetos" data-route="/projetos">Todos os projetos</a></li>
+<li><a href="#/projetos/alimentos" data-route="/projetos/alimentos">Arrecadação de Alimentos</a></li>
+<li><a href="#/projetos/agasalho" data-route="/projetos/agasalho">Campanha do Agasalho</a></li>
+<li><a href="#/projetos/educacao" data-route="/projetos/educacao">Apoio Educacional</a></li>
+</ul>
+</li>
+<li>
+<a class="menu-cta" href="#/cadastro" data-route="/cadastro">Quero ajudar</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+
+    <!-- O conteúdo das rotas é injetado aqui pelo router.js -->
+    <main id="app" tabindex="-1"></main>
+
+<footer class="site-footer">
+<div class="container footer-content">
+<p>
+<strong>
+                    Mãos que Transformam
+                </strong>
+</p>
+<p>
+                Projeto acadêmico desenvolvido com
+                HTML5, CSS3 e JavaScript.
+            </p>
+<p>
+                © 2026 Mãos que Transformam.
+            </p>
+</div>
+</footer>
+</body>
+</html>
